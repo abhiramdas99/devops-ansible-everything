@@ -15,39 +15,40 @@ Suppose we have 100 server and want to install nginx or apache in all system at 
 ## Standard Project Structure ?
 ````git
 ansible_project_xyz/
-|-- inventories/
-|   |-- production/
-|       |-- apache_servers
-|       |-- nginx_servers
+|-- inventories/               =>  just store remote server ip and 
+|   |-- production/            => denote the environment type
+|       |-- apache_servers     => point to all apache sever ip 
+|       |-- nginx_servers      => point to all nginx server ip 
 |
 |   |-- staging/
 |       |-- apache_servers
 |       |-- nginx_server
 |
-|-- roles/
+|-- roles/                    => just store the task information that want to perform in remote server 
 |  |-- apache/
-|      |-- tasks/
+|      |-- tasks/              => jstore the task like installation, start service , configuration of a partical applicaton 
 |          |-- main.yml
 |      |-- templates/
 |          |-- index.html.j2
-|      |-- meta/
-|          |-- main.yml
 |
 |   |-- nginx/
 |       |-- tasks/
 |          |-- main.yml
 |       |-- templates/
 |          |-- index.html.j2
-|       |-- meta/
-|          |-- main.yml
 |
 |   |-- java/
 |       |-- tasks/
-|          |-- main.yml
-|       |-- meta/
 |          |-- main.yml
 |
 |-- playbooks/
 |   |-- setup_servers.yml
 |   |-- install_java.yml 
-```
+````
+## Now, lets define the content of each section 
+- Inventories : Specify the remote sever 
+```git
+Define the remote server with IP
+
+````
+
