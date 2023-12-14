@@ -16,13 +16,38 @@ Suppose we have 100 server and want to install nginx or apache in all system at 
 ````git
 ansible_project_xyz/
 |-- inventories/
-|  |-- production/
-|    |-- apache_servers
-|    |-- nginx_servers
+|   |-- production/
+|       |-- apache_servers
+|       |-- nginx_servers
+|
+|   |-- staging/
+|       |-- apache_servers
+|       |-- nginx_server
 |
 |-- roles/
+|  |-- apache/
+|      |-- tasks/
+|          |-- main.yml
+|      |-- templates/
+|          |-- index.html.j2
+|      |-- meta/
+|          |-- main.yml
+|
+|   |-- nginx/
+|       |-- tasks/
+|          |-- main.yml
+|       |-- templates/
+|          |-- index.html.j2
+|       |-- meta/
+|          |-- main.yml
+|
+|   |-- java/
+|       |-- tasks/
+|          |-- main.yml
+|       |-- meta/
+|          |-- main.yml
 |
 |-- playbooks/
-|  |-- setup_servers.yml
-|  |-- install_java.yml 
+|   |-- setup_servers.yml
+|   |-- install_java.yml 
 ```
