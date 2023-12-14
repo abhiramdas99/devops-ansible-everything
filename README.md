@@ -1,4 +1,4 @@
-![image](https://github.com/abhiramdas99/devops-ansible-everything/assets/62290469/496d88ee-f0b1-4ad7-a153-be310f8d41c9)# devops-ansible-everything
+# devops-ansible-everything
 
 ## What is ansible in short ? 
 Ansible is a open source IT automation tool that use to automates provisioning, application deployment and orchestration many IT process.
@@ -13,7 +13,7 @@ Suppose we have 100 server and want to install nginx or apache in all system at 
   2) Playbooks : just think as the shell scripts the run in linux system.   
 
 ## Standard Project Structure ?
-```git
+````git
 ansible_project_xyz/
 |-- inventories/
 |  |-- production/
