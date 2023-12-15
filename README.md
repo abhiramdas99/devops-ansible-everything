@@ -46,7 +46,8 @@ ansible_project_xyz/
 |   |-- install_java.yml 
 ````
 ## Lets do some  project on ansible 
-- CASE-01:
+- Project-01
+  - CASE:
 ```git
 You are a Devops Engineer and the organization you are working on needs to set up two configuration
 management server groups. One for Apache another for Nginx. Being a Devops Engineer it is your task
@@ -60,6 +61,6 @@ Using Ansible Roles accomplish the above the tasks.
 Also, once the Apache server configuration is done you need to install Java on that server group using
 ansible role in a playbook.
 ````
-Solution :
-- CASE-02:
+  - Solution:
+    
 
