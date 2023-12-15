@@ -46,7 +46,7 @@ ansible_project_xyz/
 |   |-- install_java.yml 
 ````
 ## Lets do some handsome project  
-https://github.com/abhiramdas99/devops-ansible-everything/tree/main/playbook
+https://github.com/abhiramdas99/devops-ansible-everything/tree/main/playbooks
 
     
 
