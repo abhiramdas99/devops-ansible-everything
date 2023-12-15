@@ -1,10 +1,10 @@
 # Ansible Adhoc 
-```git
+
 Like linux command we can directly run the command in command prompt or terminal. Followng are some example of these command - 
-```
+
 ## create directly some file in  remote servers 
 ```git
-ansible -i inventory all -m "shell" -a "touch devops-class"
+ansible -i inventory all -m "shell" -a "touch devops"
 ```
 - -i inventory: Specifies the inventory file, which contains a list of hosts that Ansible will manage.
 all: Targets all hosts defined in the inventory file.
