@@ -18,4 +18,4 @@ Also, once the Apache server configuration is done you need to install Java on t
 ansible role in a playbook.
 ````
 Solution :
-Project-01 - 
+Project-01 - https://github.com/abhiramdas99/devops-ansible-everything/tree/main/playbooks/project-01
