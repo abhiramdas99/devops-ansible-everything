@@ -47,7 +47,7 @@ ansible_project_xyz/
 ````
 ## Lets do some  project on ansible 
 - CASE-01:
-  ````git
+```git
 You are a Devops Engineer and the organization you are working on needs to set up two configuration
 management server groups. One for Apache another for Nginx. Being a Devops Engineer it is your task
 to deal with this configuration management issue.
