@@ -12,3 +12,14 @@ all: Targets all hosts defined in the inventory file.
 - -m "shell": Specifies the Ansible module to use, in this case, the shell module, which allows running shell commands on remote hosts.
 
 - -a "touch devops-class": Specifies the argument for the shell module, which is the command to run on the remote hosts. In this case, it's the touch devops-class command.
+
+## check the number of cpu in target server 
+```git
+ansible -i inventory all -m "shell" -a "nproc"
+```
+
+##  chek the space untilization in target server
+```git
+ansible -i inventory all -m "shell" -a "df"
+```
+
