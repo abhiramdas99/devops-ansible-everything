@@ -45,10 +45,21 @@ ansible_project_xyz/
 |   |-- setup_servers.yml
 |   |-- install_java.yml 
 ````
-## Now, lets define the content of each section 
-- Inventories : Specify the remote sever 
-```git
-Define the remote server with IP
-
+## Lets do some  project on ansible 
+- CASE-01:
+  ````git
+You are a Devops Engineer and the organization you are working on needs to set up two configuration
+management server groups. One for Apache another for Nginx. Being a Devops Engineer it is your task
+to deal with this configuration management issue.
+Let us see the tasks that you need to perform using Ansible.
+1. Create two Server Groups. One for Apache and another for Nginx.
+2. Push two html files with their server information.
+Make sure that you don’t forget to start the services once the installation is done. Also send post
+installation messages for both the server groups.
+Using Ansible Roles accomplish the above the tasks.
+Also, once the Apache server configuration is done you need to install Java on that server group using
+ansible role in a playbook.
 ````
+Solution :
+- CASE-02:
 
