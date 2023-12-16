@@ -1,0 +1,13 @@
+---
+- name: update apt package cache 
+  apt:
+    update_cache: yes
+
+- name: install apache
+  apt:
+    name: apache2
+    state: present
+
+- name: display post installation message  for apache
+  debug:
+    msg: "apache server group configured successfully!""
